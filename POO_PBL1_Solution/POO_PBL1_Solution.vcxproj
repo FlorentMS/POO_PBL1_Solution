@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Mesures.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="POO_PBL1_Solution.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Mesures.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
