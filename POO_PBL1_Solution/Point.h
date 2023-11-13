@@ -6,16 +6,27 @@ private :
 	float y;
 
 public :
+	//Constructor
 	Point(void);
 	Point(float, float);
-	//point(int, int);
-	//void setx(int);
+	Point(int, int);
+
+	//Convert methode
+	float convertIntToFloat(int);
+	
+	//Mutateur 
+	void setx(int);
 	void setx(float);
-	//void sety(int);
+	void sety(int);
 	void sety(float);
+
+	//Accesseur
 	float getx(void);
 	float gety(void);
+
+	//Print
 	void printPoint(void);
+
 	//void moveLeft(void);
 	//void moveDroite(void);
 	//void moveTop(void);
@@ -24,7 +35,7 @@ public :
 	//void moveDroite(int);
 	//void moveTop(int);
 	//void moveBottom(int);
-	//void move(float,float);
+	void move(float,float);
 
 };
 
