@@ -2,11 +2,15 @@
 //
 
 #include <iostream>
+#include "Point.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "Hello World!\n";
+    Point p1(0.0, 0.0);
+    Point p2(1.0, 1.0);
+
+    p1.printPoint();
+    p2.printPoint();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
