@@ -21,10 +21,10 @@ float Point::convertIntToFloat(int a)
 	return (float)a;
 }
 
-Point::Point(int a, int b)
+/*Point::Point(int a, int b)
 {
 	Point(convertIntToFloat(a), convertIntToFloat(b));
-}
+}*/
 
 void Point::setx(int a)
 {
@@ -59,6 +59,46 @@ float Point::gety(void)
 void Point::printPoint(void)
 {
 	std::cout << "x : " << x << "  y : " << y << std::endl;
+}
+
+void Point::moveLeft(void)
+{
+	x -= 1;
+}
+
+void Point::moveDroite(void)
+{
+	x += 1;
+}
+
+void Point::moveTop(void)
+{
+	y += 1;
+}
+
+void Point::moveBottom(void)
+{
+	y -= 1;
+}
+
+void Point::moveLeft(int a)
+{
+	x -= convertIntToFloat(a);
+}
+
+void Point::moveDroite(int a)
+{
+	x += convertIntToFloat(a);
+}
+
+void Point::moveTop(int a)
+{
+	y += convertIntToFloat(a);
+}
+
+void Point::moveBottom(int a)
+{
+	y -= convertIntToFloat(a);
 }
 
 void Point::move(float a, float b)
